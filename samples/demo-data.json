@@ -1,0 +1,28 @@
+{
+  "journalEntries": [
+    {
+      "filename": "sunrise-ridge.md",
+      "title": "Sunrise Ridge Trail",
+      "author": "trail-hiker-42",
+      "clean": true
+    },
+    {
+      "filename": "hidden-falls.md",
+      "title": "Hidden Falls Loop",
+      "author": "trail-hiker-17",
+      "clean": false,
+      "violations": ["landowner name", "GPS coordinates"]
+    },
+    {
+      "filename": "maintenance-code-trail-report.md",
+      "title": "Trail Maintenance Report",
+      "author": "trail-hiker-08",
+      "clean": false,
+      "violations": ["maintenance code in filename", "landowner reference"]
+    }
+  ],
+  "specConfig": {
+    "literals": ["Henderson", "Blackwood Ranch", "maintenance-code"],
+    "patterns": ["\\b\\d{1,3}\\.\\d{4,}[NS]\\s*,?\\s*\\d{1,3}\\.\\d{4,}[EW]\\b"]
+  }
+}
